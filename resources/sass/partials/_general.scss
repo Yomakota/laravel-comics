@@ -1,0 +1,21 @@
+// RESETS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// COMMONS
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
