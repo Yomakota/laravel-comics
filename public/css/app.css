@@ -41,9 +41,30 @@ header .container {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.products-list .product-card {
+  width: calc(16.6666666667% - 20px);
+  margin: 10px;
+  height: 165px;
+}
+
+.products-list .product-card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
 }
 
 .footer-top .container {
@@ -73,3 +94,8 @@ header .container {
   right: 0;
 }
 
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+    $comics_list = config('comics');
+
+    $data = [
+        'comics' => $comics_list
+    ];
+
+    return view('home', $data);
 })->name('home');

@@ -5,4 +5,12 @@
 @endsection
 
 @section('main_content')
-@endsection
+    <div class="container">
+        <div class="products-list">
+            @foreach ($comics as $item)
+                <div class="product-card">
+                    <img src="{{ $item['thumb'] }}" alt="{{ $item['title'] }}">
+                </div>
+            @endforeach
+        </div>
+    @endsection
