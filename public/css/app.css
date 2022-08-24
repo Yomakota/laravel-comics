@@ -46,3 +46,30 @@ header .container {
      object-position: top;
 }
 
+.footer-top .container {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-top .container .col-left {
+  display: flex;
+}
+
+.footer-top .container .col-left .list {
+  padding: 10px;
+}
+
+.footer-top .container .col-left .list .list-title {
+  padding-bottom: 10px;
+}
+
+.footer-top .container .col-left .list .list-bottom {
+  padding: 20px 0;
+}
+
+.footer-top .container .col-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+

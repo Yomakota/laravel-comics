@@ -1,0 +1,28 @@
+.footer-top {
+    .container {
+        position: relative;
+        overflow: hidden;
+
+        .col-left {
+            display: flex;
+
+            .list {
+                padding: 10px;
+
+                .list-title {
+                    padding-bottom: 10px;
+                }
+
+                .list-bottom {
+                    padding: 20px 0;
+                }
+            }
+        }
+
+        .col-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
