@@ -1,4 +1,4 @@
-<header class="header">
+<section class="header-bottom">
     <div class="container">
         <div class="logo">
             <img src="{{ asset('img/dc-logo.png') }}" alt="">
@@ -44,5 +44,8 @@
                 </li>
             </ul>
         </nav>
+        <div class="search">
+            <input type="text" placeholder="Search">
+        </div>
     </div>
-</header>
+</section>

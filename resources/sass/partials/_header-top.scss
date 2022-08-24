@@ -1,0 +1,20 @@
+.header-top {
+    background-color: blue;
+    color: white;
+    font-size: .7em;
+    padding: 5px;
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        text-transform: uppercase;
+
+        .header-top-links {
+            display: flex;
+
+            .first-link {
+                padding: 0 50px;
+            }
+        }
+    }
+}

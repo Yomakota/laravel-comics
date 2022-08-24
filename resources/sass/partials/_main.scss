@@ -16,3 +16,36 @@
         }
     }
 }
+
+.services {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    background-color: blue;
+
+    .services-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            .service-item {
+                display: flex;
+                align-items: center;
+            }
+
+            img {
+                width: 30px;
+                margin-right: 10px;
+            }
+
+            .service-text {
+                color: white;
+                text-transform: uppercase;
+                font-size: .7em;
+            }
+        }
+    }
+}

@@ -18,19 +18,54 @@ a {
   margin: 0 auto;
 }
 
-header .container {
+.header-top {
+  background-color: blue;
+  color: white;
+  font-size: 0.7em;
+  padding: 5px;
+}
+
+.header-top .container {
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+}
+
+.header-top .container .header-top-links {
+  display: flex;
+}
+
+.header-top .container .header-top-links .first-link {
+  padding: 0 50px;
+}
+
+.header-bottom .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.list-menu {
+.header-bottom .container .list-menu {
   display: flex;
-  justify-content: center;
+  text-transform: uppercase;
 }
 
-.list-menu li {
-  margin: 5px;
+.header-bottom .container .list-menu li {
+  margin: 0 10px;
+}
+
+.header-bottom .container .search input::-moz-placeholder {
+  text-align: right;
+}
+
+.header-bottom .container .search input::placeholder {
+  text-align: right;
+}
+
+.header-bottom .container .search input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: blue;
 }
 
 .jumbo {
@@ -40,9 +75,7 @@ header .container {
 .jumbo img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
-  -o-object-position: top;
   object-position: top;
 }
 
@@ -65,6 +98,37 @@ header .container {
   object-fit: cover;
   -o-object-position: top;
   object-position: top;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  padding: 20px;
+  background-color: blue;
+}
+
+.services .services-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services .services-list li .service-item {
+  display: flex;
+  align-items: center;
+}
+
+.services .services-list li img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.services .services-list li .service-text {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.7em;
 }
 
 .footer-top .container {

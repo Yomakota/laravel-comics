@@ -1,0 +1,28 @@
+.header-bottom {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .list-menu {
+            display: flex;
+            text-transform: uppercase;
+
+            li {
+                margin: 0 10px;
+            }
+        }
+
+        .search {
+            input::placeholder {
+                text-align: right;
+            }
+
+            input {
+                outline: 0;
+                border-width: 0 0 2px;
+                border-color: blue;
+            }
+        }
+    }
+}

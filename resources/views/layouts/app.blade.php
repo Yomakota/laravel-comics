@@ -12,7 +12,11 @@
 
 <body>
 
-    @include('partials.header')
+    <header>
+        @include('partials.header-top')
+        @include('partials.header-bottom')
+    </header>
+
     @include('partials.jumbotron')
 
     <main>
