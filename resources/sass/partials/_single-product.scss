@@ -1,0 +1,55 @@
+.thumb-section {
+    background-color: $main-color;
+
+    .container-70 {
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+        height: 50px;
+
+        img {
+            position: absolute;
+            bottom: 50%;
+            left: 0;
+            width: 150px;
+        }
+    }
+}
+
+.info {
+    height: 400px;
+
+    .container-70 {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        padding: 50px 0;
+        gap: 10px;
+
+        .title {
+            text-transform: uppercase;
+        }
+
+        .availability {
+            background-color: green;
+            color: white;
+            display: flex;
+
+            .price {
+                display: flex;
+                flex-grow: 2;
+                justify-content: space-between;
+                border-right: 1px solid black;
+                padding: 20px;
+            }
+
+            .check-available {
+                padding: 20px;
+            }
+        }
+
+        .description {
+            padding: 20px 0;
+        }
+    }
+}
