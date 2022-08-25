@@ -1,7 +1,37 @@
 .footer-bottom {
+    background-color: $footer-bottom;
+    padding: 30px;
+    text-transform: uppercase;
+
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .col-left {
+            border: 1px solid $main-color;
+            padding: 10px;
+            color: white;
+        }
+
+        .col-right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .follow {
+                font-weight: bold;
+                color: $main-color;
+                padding: 10px;
+            }
+
+            .footer-links {
+                display: flex;
+
+                li {
+                    padding: 10px;
+                }
+            }
+        }
     }
 }

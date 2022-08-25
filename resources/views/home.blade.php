@@ -7,6 +7,9 @@
 @section('main_content')
     <section class="comics">
         <div class="container">
+            <button class="current">
+                Current series
+            </button>
             <ul class="products-list">
                 @foreach ($comics as $item)
                     <li class="product-card">
@@ -14,6 +17,9 @@
                     </li>
                 @endforeach
             </ul>
+            <button class="load">
+                load more
+            </button>
         </div>
     </section>
     <section class="services">
@@ -21,7 +27,7 @@
             <ul class="services-list">
                 <li>
                     <div class="service-item">
-                        <img src="{{ asset('img/buy-comics-digital-comics.png') }}" alt="">
+                        <img src="{{ asset('img/buy-comics-digital-comics.png') }}" alt="digital comics">
                         <span class="service-text">
                             digital comics
                         </span>
@@ -29,7 +35,7 @@
                 </li>
                 <li>
                     <div class="service-item">
-                        <img src="{{ asset('img/buy-comics-merchandise.png') }}" alt="">
+                        <img src="{{ asset('img/buy-comics-merchandise.png') }}" alt="dc merchandise">
                         <span class="service-text">
                             dc merchandise
                         </span>
@@ -37,7 +43,7 @@
                 </li>
                 <li>
                     <div class="service-item">
-                        <img src="{{ asset('img/buy-comics-subscriptions.png') }}" alt="">
+                        <img src="{{ asset('img/buy-comics-subscriptions.png') }}" alt=" subscription">
                         <span class="service-text">
                             subscription
                         </span>
@@ -45,7 +51,7 @@
                 </li>
                 <li>
                     <div class="service-item">
-                        <img src="{{ asset('img/buy-comics-shop-locator.png') }}" alt="">
+                        <img src="{{ asset('img/buy-comics-shop-locator.png') }}" alt=" comic shop locator">
                         <span class="service-text">
                             comic shop locator
                         </span>
@@ -53,7 +59,7 @@
                 </li>
                 <li>
                     <div class="service-item">
-                        <img src="{{ asset('img/buy-dc-power-visa.svg') }}" alt="">
+                        <img src="{{ asset('img/buy-dc-power-visa.svg') }}" alt="dc power visa">
                         <span class="service-text">
                             dc power visa
                         </span>

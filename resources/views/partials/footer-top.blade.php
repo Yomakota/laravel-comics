@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="col-right">
-            <img src="{{ asset('img/dc-logo-bg.png') }}" alt="">>
+            <img src="{{ asset('img/dc-logo-bg.png') }}" alt="">
         </div>
     </div>
 </section>

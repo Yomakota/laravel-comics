@@ -10,7 +10,7 @@
                 </li>
 
                 <li class="current">
-                    <a href="#">Comics</a>
+                    <a href="{{ route('home') }}">Comics</a>
                 </li>
 
                 <li>
@@ -36,7 +36,7 @@
                 </li>
 
                 <li>
-                    <a href="#">News</a>
+                    <a href="{{ route('news') }}">News</a>
                 </li>
 
                 <li>
@@ -45,7 +45,7 @@
             </ul>
         </nav>
         <div class="search">
-            <input type="text" placeholder="Search">
+            <input placeholder='Search' />
         </div>
     </div>
 </section>

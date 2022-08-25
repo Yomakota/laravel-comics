@@ -1,16 +1,21 @@
 .footer-top {
+    background-image: url(../img/footer-bg.jpg);
+    color: gray;
+
     .container {
         position: relative;
         overflow: hidden;
 
         .col-left {
             display: flex;
+            padding: 30px;
 
             .list {
                 padding: 10px;
 
                 .list-title {
                     padding-bottom: 10px;
+                    color: white;
                 }
 
                 .list-bottom {
@@ -21,8 +26,13 @@
 
         .col-right {
             position: absolute;
-            top: 0;
+            top: -56px;
             right: 0;
+            width: 470px;
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
