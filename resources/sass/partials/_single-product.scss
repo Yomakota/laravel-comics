@@ -53,3 +53,41 @@
         }
     }
 }
+
+.details {
+    background-color: $details-product;
+    padding: 100px;
+
+    .container-70 {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        gap: 30px;
+
+        .col-left {
+            width: 50%;
+        }
+    }
+
+    .info-title {
+        border-bottom: 1px solid black;
+    }
+
+    .row {
+        display: flex;
+        border-bottom: 1px solid black;
+        padding: 20px;
+
+        .row-content {
+            width: 75%;
+        }
+
+        .row-title {
+            width: 25%;
+        }
+    }
+
+    .col-right {
+        width: 50%;
+    }
+}

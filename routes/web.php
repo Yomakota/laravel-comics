@@ -32,9 +32,8 @@ Route::get('/single-product/{id}', function ($id) {
         if ($item['id'] == $id) {
             $current_product = $item;
         }
-
         $data = [
-            'current_product' => $current_product
+            'current_product' => $current_product,
         ];
     }
     return view('single-product', $data);

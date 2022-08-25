@@ -213,6 +213,37 @@ a {
   padding: 20px 0;
 }
 
+.details {
+  background-color: #F6F6F6;
+  padding: 100px;
+}
+.details .container-70 {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+}
+.details .container-70 .col-left {
+  width: 50%;
+}
+.details .info-title {
+  border-bottom: 1px solid black;
+}
+.details .row {
+  display: flex;
+  border-bottom: 1px solid black;
+  padding: 20px;
+}
+.details .row .row-content {
+  width: 75%;
+}
+.details .row .row-title {
+  width: 25%;
+}
+.details .col-right {
+  width: 50%;
+}
+
 .footer-top {
   background-image: url(../img/footer-bg.jpg);
   color: gray;
