@@ -13,7 +13,9 @@
             <ul class="products-list">
                 @foreach ($comics as $item)
                     <li class="product-card">
-                        <img src="{{ $item['thumb'] }}" alt="{{ $item['title'] }}">
+                        <a href="{{ route('single-product', ['id' => $item['id']]) }}">
+                            <img src="{{ $item['thumb'] }}" alt="{{ $item['title'] }}">
+                        </a>
                     </li>
                 @endforeach
             </ul>
