@@ -15,6 +15,7 @@
                     <li class="product-card">
                         <a href="{{ route('single-product', ['id' => $item['id']]) }}">
                             <img src="{{ $item['thumb'] }}" alt="{{ $item['title'] }}">
+                            <div class="comic-series">{{ $item['series'] }}</div>
                         </a>
                     </li>
                 @endforeach

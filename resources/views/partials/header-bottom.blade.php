@@ -9,7 +9,7 @@
                     <a href="#">Characters</a>
                 </li>
 
-                <li class="current">
+                <li class="{{ Route::current()->getName() === 'home' ? 'current' : '' }}">
                     <a href="{{ route('home') }}">Comics</a>
                 </li>
 
@@ -35,7 +35,7 @@
                     <a href="#">Fans</a>
                 </li>
 
-                <li>
+                <li class="{{ Route::current()->getName() === 'news' ? 'current' : '' }}">
                     <a href="{{ route('news') }}">News</a>
                 </li>
 

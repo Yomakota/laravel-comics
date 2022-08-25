@@ -111,12 +111,13 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 60px 0;
+  padding: 120px 0;
 }
 .comics .container .products-list .product-card {
   width: calc(16.6666666667% - 20px);
   margin: 10px;
   height: 165px;
+  margin-bottom: 50px;
 }
 .comics .container .products-list .product-card img {
   width: 100%;
@@ -125,6 +126,10 @@ a {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+.comics .container .products-list .product-card .comic-series {
+  color: white;
+  text-transform: uppercase;
 }
 .comics .container .load {
   position: absolute;
@@ -165,83 +170,129 @@ a {
   font-size: 0.7em;
 }
 
-.thumb-section {
+.single-product-main .thumb-section {
   background-color: #0282F9;
 }
-.thumb-section .container-70 {
+.single-product-main .thumb-section .container-70 {
   position: relative;
   width: 70%;
   margin: 0 auto;
   height: 50px;
 }
-.thumb-section .container-70 img {
+.single-product-main .thumb-section .container-70 img {
   position: absolute;
   bottom: 50%;
   left: 0;
   width: 150px;
 }
-
-.info {
+.single-product-main .info {
   height: 400px;
 }
-.info .container-70 {
+.single-product-main .info .container-70 {
   width: 70%;
   margin: 0 auto;
   display: flex;
   padding: 50px 0;
   gap: 10px;
 }
-.info .container-70 .title {
+.single-product-main .info .container-70 .title {
   text-transform: uppercase;
 }
-.info .container-70 .availability {
+.single-product-main .info .container-70 .availability {
   background-color: green;
   color: white;
   display: flex;
 }
-.info .container-70 .availability .price {
+.single-product-main .info .container-70 .availability .price {
   display: flex;
   flex-grow: 2;
   justify-content: space-between;
   border-right: 1px solid black;
   padding: 20px;
+  text-transform: capitalize;
 }
-.info .container-70 .availability .check-available {
+.single-product-main .info .container-70 .availability .price .text-green {
+  color: lightgreen;
+}
+.single-product-main .info .container-70 .availability .price .text-up {
+  text-transform: uppercase;
+}
+.single-product-main .info .container-70 .availability .check-available {
   padding: 20px;
 }
-.info .container-70 .description {
+.single-product-main .info .container-70 .description {
   padding: 20px 0;
 }
-
-.details {
-  background-color: #F6F6F6;
-  padding: 100px;
+.single-product-main .info .container-70 .col-right .ads-title {
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 1em;
 }
-.details .container-70 {
+.single-product-main .details {
+  background-color: #F6F6F6;
+  padding: 100px 0;
+}
+.single-product-main .details .container-70 {
   width: 70%;
   margin: 0 auto;
   display: flex;
   gap: 30px;
 }
-.details .container-70 .col-left {
+.single-product-main .details .container-70 .col-left {
   width: 50%;
 }
-.details .info-title {
-  border-bottom: 1px solid black;
+.single-product-main .details .container-70 .col-left .row-content {
+  color: #96DCF6;
 }
-.details .row {
+.single-product-main .details .info-title {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 3em;
+}
+.single-product-main .details .row {
   display: flex;
-  border-bottom: 1px solid black;
-  padding: 20px;
+  border-bottom: 1px solid lightgrey;
+  padding: 20px 0;
 }
-.details .row .row-content {
+.single-product-main .details .row .row-content {
   width: 75%;
 }
-.details .row .row-title {
+.single-product-main .details .row .row-title {
   width: 25%;
 }
-.details .col-right {
+.single-product-main .details .col-right {
   width: 50%;
+}
+.single-product-main .details .col-right .row-content.series {
+  text-transform: uppercase;
+  color: #96DCF6;
+}
+.single-product-main .nav-bar-service {
+  background-color: #F6F6F6;
+}
+.single-product-main .nav-bar-service .container-70 {
+  width: 70%;
+  margin: 0 auto;
+}
+.single-product-main .nav-bar-service ul {
+  display: flex;
+}
+.single-product-main .nav-bar-service ul li {
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+  width: 100%;
+  padding: 10px;
+  border-left: 0.5px solid grey;
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+.single-product-main .nav-bar-service ul li:last-child {
+  border-right: 0.5px solid grey;
+}
+.single-product-main .nav-bar-service ul li img {
+  background-color: lightgrey;
+  width: 40px;
+  height: 40px;
 }
 
 .footer-top {
@@ -274,6 +325,12 @@ a {
 }
 .footer-top .container .col-right img {
   width: 100%;
+}
+.footer-top .copyrights {
+  width: 65%;
+}
+.footer-top .copyrights a {
+  color: #0282F9;
 }
 
 .footer-bottom {
